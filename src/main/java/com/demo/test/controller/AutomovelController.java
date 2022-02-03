@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
+import java.net.URI;
+
 @Controller
 public class AutomovelController {
 
@@ -18,7 +20,7 @@ public class AutomovelController {
     @PostMapping("/cadastroAutomoveis")
     public ResponseEntity<String> cadastrarAutomavel(@RequestBody Automovel automovel){
         service.cadastrarAutomovel(automovel);
-        return ResponseEntity.ok().build();
+        return ResponseEntity.created(URI.create("Cadastrado")).build();
     }
 
     @GetMapping("/automoveis")
