@@ -2,7 +2,7 @@
 
 Utilizando de um banco H2, a aplicação cadastra e retorna os registros atraves das chamadas do endpoints
 
-##POST
+## POST
 "/cadastroAutomoveis"
 
 Exemplo de body:
@@ -15,7 +15,7 @@ Exemplo de body:
 
 retorno: HTTP_Status 201
 
-##GET
+## GET
 "/automoveis"
 
 Exemplo de retorno: [
