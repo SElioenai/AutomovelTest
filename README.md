@@ -5,7 +5,7 @@ Utilizando de um banco H2, a aplicação cadastra e retorna os registros atraves
 ## POST
 "/cadastroAutomoveis"
 
-Exemplo de body:
+body:
 {
      "marca" : String,
     "modelo" : String,
@@ -13,6 +13,14 @@ Exemplo de body:
     "dataCadastro" : Date
 }
 
+Exemplo de body: 
+{ 
+     "marca" : "Fiat",
+     "modelo" : "Uno",
+     "valor" : 1.0,
+     "dataCadastro" : "03/02/2022"
+ }
+ 
 retorno: HTTP_Status 201
 
 ## GET
